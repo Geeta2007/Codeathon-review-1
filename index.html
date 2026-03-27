@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMS College of Engineering — Bengaluru</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-brand">
+    <img src="bmsce-logo.png" alt="BMSCE Logo" class="nav-logo"/>
+    <div class="nav-title">
+      <span class="nav-main">B.M.S. College of Engineering</span>
+      <span class="nav-sub">Basavanagudi, Bengaluru — Est. 1946</span>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="college.html">About College</a></li>
+    <li><a href="guide.html" class="nav-cta">Placement Guide</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleNav()"><i class="fas fa-bars"></i></div>
+</nav>
+
+<!-- FULL-SCREEN LANDING HERO -->
+<section class="landing-hero">
+  <div class="hero-img-wrap">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/BMSCE_Mech%2C_Arch_and_IEM_building.jpg/1280px-BMSCE_Mech%2C_Arch_and_IEM_building.jpg"
+      alt="BMSCE Campus" class="hero-bg-img"
+      onerror="this.style.display='none'"
+    />
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="landing-content">
+    <img src="bmsce-logo.png" alt="BMSCE Logo" class="landing-logo"/>
+    <h1 class="landing-title">B.M.S. College of Engineering</h1>
+    <p class="landing-tagline"><em>Libertas Per Veritatem</em> — Freedom Through Truth</p>
+    <p class="landing-sub">Autonomous · VTU Affiliated · NAAC A++ · Est. 1946 · Bengaluru</p>
+
+    <!-- THE TWO BIG BUTTONS -->
+    <div class="landing-cards">
+      <a href="college.html" class="landing-card">
+        <div class="lc-icon"><i class="fas fa-university"></i></div>
+        <div class="lc-body">
+          <h2>Explore College</h2>
+          <p>About BMSCE · Departments · Infrastructure · Events · Contact</p>
+        </div>
+        <div class="lc-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a>
+
+      <a href="guide.html" class="landing-card lc-gold">
+        <div class="lc-icon"><i class="fas fa-rocket"></i></div>
+        <div class="lc-body">
+          <h2>Placement Guide</h2>
+          <p>Roadmap · Skills · Companies · Salary Data · Books · Graphs</p>
+        </div>
+        <div class="lc-arrow"><i class="fas fa-arrow-right"></i></div>
+      </a>
+    </div>
+
+    <!-- QUICK STATS STRIP -->
+    <div class="landing-stats">
+      <div class="ls-item"><span class="ls-num">1946</span><span class="ls-label">Founded</span></div>
+      <div class="ls-sep"></div>
+      <div class="ls-item"><span class="ls-num">6000+</span><span class="ls-label">Students</span></div>
+      <div class="ls-sep"></div>
+      <div class="ls-item"><span class="ls-num">383</span><span class="ls-label">Recruiters</span></div>
+      <div class="ls-sep"></div>
+      <div class="ls-item"><span class="ls-num">₹51.5 LPA</span><span class="ls-label">Highest Package</span></div>
+      <div class="ls-sep"></div>
+      <div class="ls-item"><span class="ls-num">NAAC A++</span><span class="ls-label">Accreditation</span></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleNav(){ document.querySelector('.nav-links').classList.toggle('open'); }
+</script>
+</body>
+</html>
